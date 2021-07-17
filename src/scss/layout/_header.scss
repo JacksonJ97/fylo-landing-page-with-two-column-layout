@@ -1,0 +1,29 @@
+@use "abstracts/variables" as *;
+
+header {
+  margin: 2em 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  max-width: 25%;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+header li {
+  margin-left: 1.5em;
+  font-size: 0.875rem;
+}
+
+header li a {
+  color: $veryDarkBlue;
+}
