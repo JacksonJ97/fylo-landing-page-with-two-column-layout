@@ -36,6 +36,11 @@ body {
   cursor: pointer;
 }
 
+.testimonial-card {
+  border-radius: 8px;
+  background-color: white;
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -46,12 +51,8 @@ body {
   margin: 0 auto;
 }
 
-.info-section img {
-  max-width: 20%;
-}
-
 header {
-  margin: 2em 0;
+  margin: 2em 0 6em 0;
 }
 
 header .container {
@@ -89,7 +90,9 @@ header li a {
 }
 
 h1 {
+  font-family: "Raleway", sans-serif;
   text-align: center;
+  line-height: 1.5;
   margin-bottom: 1em;
 }
 
@@ -103,4 +106,36 @@ h1 {
 .hero-section input {
   display: block;
   margin: 0 auto 1em auto;
+}
+
+.info-section {
+  background-color: #f6f6fe;
+}
+
+.info-section img {
+  max-width: 85%;
+  display: block;
+  margin: 2em auto 4em auto;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1.75em;
+}
+
+.info-section p {
+  font-size: 0.875rem;
+  margin-bottom: 1.75em;
+  color: #bfbfbf;
+}
+
+.cta-section {
+  background-color: #585989;
+}
+
+footer {
+  background-color: #070439;
+  color: white;
 }

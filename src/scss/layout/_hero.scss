@@ -1,3 +1,5 @@
+@use "abstracts/variables" as *;
+
 .hero-section {
   margin-bottom: 4em;
 }
@@ -9,7 +11,9 @@
 }
 
 h1 {
+  font-family: $headerFont;
   text-align: center;
+  line-height: 1.5;
   margin-bottom: 1em;
 }
 
