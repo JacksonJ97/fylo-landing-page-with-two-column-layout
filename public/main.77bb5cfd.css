@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+.sr-only {
+  display: hidden;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #070439;
@@ -156,4 +160,8 @@ h2 {
 footer {
   background-color: #070439;
   color: white;
+}
+
+footer a {
+  color: #fff;
 }
