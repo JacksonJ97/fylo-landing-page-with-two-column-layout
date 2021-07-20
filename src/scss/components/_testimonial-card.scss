@@ -3,4 +3,33 @@
 .testimonial-card {
   border-radius: 8px;
   background-color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 0.75rem;
+  padding: 2em 1em 2em 2em;
+  line-height: 1.7;
+}
+
+.bg-quotes {
+  margin-bottom: 0.5em;
+}
+
+.user-details {
+  display: flex;
+  align-items: flex-end;
+}
+
+.user-picture {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-top: 2em;
+  margin-right: 1em;
+}
+
+.user-name {
+  font-weight: 700;
+}
+
+.user-title {
+  font-size: 0.625rem;
 }

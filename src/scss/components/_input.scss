@@ -14,9 +14,27 @@
 }
 
 .hero-section input[type="submit"] {
-  border: none;
   font: 700 0.8125rem $bodyFont;
   background-color: $brightBlue;
+  border: none;
+  color: $lightGrayishBlue;
+  cursor: pointer;
+}
+
+.cta-section input {
+  display: block;
+  margin: 0 auto 1em auto;
+  padding: 0.75em 1em;
+  width: 90%;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section input[type="submit"] {
+  font: 400 0.8125rem $bodyFont;
+  background-color: $brightBlue;
+  border: none;
   color: $lightGrayishBlue;
   cursor: pointer;
 }

@@ -2,4 +2,20 @@
 
 .cta-section {
   background-color: $desaturatedBlue;
+  color: #fff;
+  padding: 4em 0;
+}
+
+h3 {
+  font-family: $headerFont;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.cta-section p {
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 2em;
+  line-height: 1.5;
 }

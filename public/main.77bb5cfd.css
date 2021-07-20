@@ -35,9 +35,27 @@ body {
 }
 
 .hero-section input[type=submit] {
-  border: none;
   font: 700 0.8125rem "Open Sans", sans-serif;
   background-color: #3065f8;
+  border: none;
+  color: #f6f6fe;
+  cursor: pointer;
+}
+
+.cta-section input {
+  display: block;
+  margin: 0 auto 1em auto;
+  padding: 0.75em 1em;
+  width: 90%;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section input[type=submit] {
+  font: 400 0.8125rem "Open Sans", sans-serif;
+  background-color: #3065f8;
+  border: none;
   color: #f6f6fe;
   cursor: pointer;
 }
@@ -45,6 +63,35 @@ body {
 .testimonial-card {
   border-radius: 8px;
   background-color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 0.75rem;
+  padding: 2em 1em 2em 2em;
+  line-height: 1.7;
+}
+
+.bg-quotes {
+  margin-bottom: 0.5em;
+}
+
+.user-details {
+  display: flex;
+  align-items: flex-end;
+}
+
+.user-picture {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-top: 2em;
+  margin-right: 1em;
+}
+
+.user-name {
+  font-weight: 700;
+}
+
+.user-title {
+  font-size: 0.625rem;
 }
 
 html {
@@ -112,22 +159,22 @@ h1 {
   margin-bottom: 2em;
 }
 
-.info-section {
-  background-color: #f6f6fe;
-  padding-bottom: 4em;
-}
-
-.info-section img {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto 4em auto;
-}
-
 h2 {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   text-align: center;
   margin-bottom: 1.75em;
+}
+
+.info-section {
+  background-color: #f6f6fe;
+  padding-bottom: 4em;
+}
+
+.info-section-picture {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 4em auto;
 }
 
 .info-text {
@@ -155,6 +202,22 @@ h2 {
 
 .cta-section {
   background-color: #585989;
+  color: #fff;
+  padding: 4em 0;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.cta-section p {
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 2em;
+  line-height: 1.5;
 }
 
 footer {

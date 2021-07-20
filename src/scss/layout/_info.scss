@@ -1,21 +1,21 @@
 @use "abstracts/variables" as *;
 
-.info-section {
-  background-color: $lightGrayishBlue;
-  padding-bottom: 4em;
-}
-
-.info-section img {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto 4em auto;
-}
-
 h2 {
   font-family: $headerFont;
   font-size: 1rem;
   text-align: center;
   margin-bottom: 1.75em;
+}
+
+.info-section {
+  background-color: $lightGrayishBlue;
+  padding-bottom: 4em;
+}
+
+.info-section-picture {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 4em auto;
 }
 
 .info-text {
