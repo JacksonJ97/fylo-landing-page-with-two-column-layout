@@ -8,14 +8,17 @@ h2 {
 }
 
 .info-section {
-  background-color: $lightGrayishBlue;
-  padding-bottom: 4em;
+  background-color: #f8f8fe;
+  padding-top: 2em;
+  padding-bottom: 6em;
+  position: relative;
+  border-top: 6px solid #f8f8fe;
 }
 
 .info-section-picture {
   max-width: 100%;
   display: block;
-  margin: 0 auto 4em auto;
+  margin: 0 auto 6em auto;
 }
 
 .info-text {
@@ -28,15 +31,21 @@ h2 {
 .info-section a {
   display: flex;
   align-items: center;
-  font-size: 0.75rem;
-  width: 132px;
-  margin: 0 auto;
+  font-size: 0.8125rem;
+  width: 141px;
+  margin: 3em auto 3em auto;
   color: $moderateCyan;
   border-bottom: 1px solid $moderateCyan;
   padding-bottom: 0.4em;
-  margin-bottom: 4em;
 }
 
 .info-section a img {
   margin: 0.1em 0 0 0.5em;
+}
+
+.info-bg {
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  z-index: -2;
 }

@@ -3,7 +3,7 @@
 .hero-section input {
   display: block;
   margin: 0 auto 1em auto;
-  padding: 0.75em 1em;
+  padding: 1em 1.5em;
   width: 90%;
   border-radius: 4px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
@@ -13,8 +13,13 @@
   border: 1px solid $veryDarkBlue;
 }
 
+.hero-section input[type="text"]::placeholder {
+  color: $lightGray;
+}
+
 .hero-section input[type="submit"] {
-  font: 700 0.8125rem $bodyFont;
+  font-family: $bodyFont;
+  font-weight: 700;
   background-color: $brightBlue;
   border: none;
   color: $lightGrayishBlue;
@@ -24,15 +29,22 @@
 .cta-section input {
   display: block;
   margin: 0 auto 1em auto;
-  padding: 0.75em 1em;
-  width: 90%;
+  padding: 1em 0.75em;
+  width: 80%;
   border-radius: 4px;
   border: none;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.cta-section input[type="text"]::placeholder {
+  color: $lightGray;
+  font-size: 0.75rem;
+}
+
 .cta-section input[type="submit"] {
-  font: 400 0.8125rem $bodyFont;
+  font-family: $bodyFont;
+  font-weight: 700;
+  font-size: 0.75rem;
   background-color: $brightBlue;
   border: none;
   color: $lightGrayishBlue;

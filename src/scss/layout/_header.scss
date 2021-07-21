@@ -21,7 +21,7 @@ header nav ul {
 
 header li {
   margin-left: 1.5em;
-  font-size: 0.875rem;
+  font-size: clamp(0.75rem, 3.5vw, 1rem);
 }
 
 header li a {
