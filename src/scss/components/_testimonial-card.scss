@@ -4,9 +4,10 @@
   border-radius: 8px;
   background-color: white;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  font-size: 0.75rem;
-  padding: 2em 1em 2em 2em;
-  line-height: 1.7;
+  font-size: clamp(0.75rem, 2.5vw, 00.875rem);
+  padding: 2em;
+  margin: 0 auto;
+  max-width: 350px;
 }
 
 .bg-quotes {
@@ -31,5 +32,5 @@
 }
 
 .user-title {
-  font-size: 0.625rem;
+  font-size: clamp(0.625rem, 2.25vw, 0.75rem);
 }

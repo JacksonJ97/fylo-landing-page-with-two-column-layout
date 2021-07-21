@@ -2,7 +2,7 @@
 
 h2 {
   font-family: $headerFont;
-  font-size: 1rem;
+  font-size: clamp(1rem, 2.25vw, 1.125rem);
   text-align: center;
   margin-bottom: 1.75em;
 }
@@ -16,23 +16,26 @@ h2 {
 }
 
 .info-section-picture {
-  max-width: 100%;
+  width: 100%;
+  max-width: 600px;
   display: block;
   margin: 0 auto 6em auto;
 }
 
 .info-text {
-  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 2vw, 1rem);
   margin-bottom: 1.5em;
   color: $veryDarkBlue;
   opacity: 0.7;
+  max-width: 700px;
+  margin: 0 auto 1.5em auto;
 }
 
 .info-section a {
   display: flex;
   align-items: center;
-  font-size: 0.8125rem;
-  width: 141px;
+  font-size: clamp(0.8125rem, 2vw, 0.9375rem);
+  width: clamp(141px, 22vw, 161px);
   margin: 3em auto 3em auto;
   color: $moderateCyan;
   border-bottom: 1px solid $moderateCyan;
