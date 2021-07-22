@@ -26,3 +26,32 @@ h1 {
   margin: 0 auto 2em auto;
   max-width: 650px;
 }
+
+@media (min-width: 1100px) {
+  .hero-section .container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 24px;
+  }
+
+  h1 {
+    font-size: clamp(1.625rem, 2.75vw, 2.5rem);
+    text-align: left;
+    margin-bottom: 0.5em;
+  }
+
+  .hero-section img {
+    width: 50%;
+    max-width: 660px;
+  }
+
+  .hero-section p {
+    text-align: left;
+    max-width: 570px;
+    margin: 0 0 2em 0;
+  }
+
+  .hero-text-container {
+    margin: 3em auto 0 auto;
+  }
+}
