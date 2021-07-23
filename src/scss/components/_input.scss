@@ -63,4 +63,13 @@
     margin-left: 1em;
     max-width: 180px;
   }
+
+  .cta-section input {
+    width: 450px;
+  }
+
+  .cta-section input[type="submit"] {
+    width: 180px;
+    margin: 0;
+  }
 }
