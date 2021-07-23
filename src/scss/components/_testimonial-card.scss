@@ -34,3 +34,9 @@
 .user-title {
   font-size: clamp(0.625rem, 2.25vw, 0.75rem);
 }
+
+@media (min-width: 1100px) {
+  .testimonial-card {
+    margin: 0;
+  }
+}

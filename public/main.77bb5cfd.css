@@ -124,6 +124,11 @@ p {
   font-size: clamp(0.625rem, 2.25vw, 0.75rem);
 }
 
+@media (min-width: 1100px) {
+  .testimonial-card {
+    margin: 0;
+  }
+}
 html {
   height: 100%;
 }
@@ -196,7 +201,7 @@ h1 {
 }
 
 .hero-section p {
-  font-size: clamp(0.9375rem, 2.5vw, 1.0625rem);
+  font-size: clamp(0.9375rem, 2vw, 1.0625rem);
   text-align: center;
   margin: 0 auto 2em auto;
   max-width: 650px;
@@ -254,7 +259,6 @@ h2 {
 
 .info-text {
   font-size: clamp(0.875rem, 2vw, 1rem);
-  margin-bottom: 1.5em;
   color: #070439;
   opacity: 0.7;
   max-width: 700px;
@@ -276,13 +280,60 @@ h2 {
   margin: 0.1em 0 0 0.5em;
 }
 
-.info-bg {
+.info-mobile-bg {
   position: absolute;
   bottom: 100%;
   width: 100%;
   z-index: -2;
 }
 
+.info-desktop-bg {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .info-section .container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 24px;
+  }
+
+  h2 {
+    text-align: left;
+    font-size: clamp(1.125rem, 2.75vw, 2.25rem);
+    margin-bottom: 1em;
+  }
+
+  .info-text {
+    max-width: 525px;
+    margin: 0 0 1.5em 0;
+  }
+
+  .info-section-picture {
+    width: 50%;
+    max-width: 660px;
+  }
+
+  .info-section a {
+    margin: 0 0 3em 0;
+  }
+
+  .info-text-container {
+    margin: 0 auto;
+  }
+
+  .info-mobile-bg {
+    display: none;
+  }
+
+  .info-desktop-bg {
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+}
 .cta-section {
   background-color: #585989;
   color: #fff;
