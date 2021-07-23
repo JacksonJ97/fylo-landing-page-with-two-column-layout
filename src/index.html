@@ -37,8 +37,13 @@
               Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with
               friends, family, and co-workers.
             </p>
-            <input type="text" placeholder="Enter your email..." />
-            <input type="submit" value="Get Started" />
+
+            <div class="hero-input-container">
+              <div class="hero-text-input-container">
+                <input type="text" placeholder="Enter your email..." id="hero-text-input" />
+              </div>
+              <input type="submit" value="Get Started" id="hero-button" />
+            </div>
           </div>
         </div>
       </section>
@@ -91,8 +96,8 @@
           </div>
 
           <div class="cta-input-container">
-            <input type="text" name="email" id="email" placeholder="email@example.com" />
-            <input type="submit" value="Get Started For Free" />
+            <input type="text" placeholder="email@example.com" id="cta-text-input" />
+            <input type="submit" value="Get Started For Free" id="cta-button" />
           </div>
         </div>
       </section>
@@ -133,4 +138,5 @@
       </div>
     </footer>
   </body>
+  <script src="index.js"></script>
 </html>

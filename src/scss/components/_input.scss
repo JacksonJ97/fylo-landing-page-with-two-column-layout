@@ -2,7 +2,7 @@
 
 .hero-section input {
   display: block;
-  margin: 0 auto 1em auto;
+  margin: 0 auto;
   padding: 1em 1.5em;
   width: 90%;
   max-width: 450px;
@@ -33,9 +33,17 @@
   outline: none;
 }
 
+.hero-input-response {
+  font-size: 0.75rem;
+  color: hsl(0, 100%, 50%);
+  width: 90%;
+  max-width: 450px;
+  margin: 0.25em auto 0.5em auto;
+}
+
 .cta-section input {
   display: block;
-  margin: 0 auto 1em auto;
+  margin: 0 auto;
   padding: 1em 0.75em;
   width: 80%;
   max-width: 450px;
@@ -65,15 +73,37 @@
   outline: none;
 }
 
+.cta-input-response {
+  font-size: 0.75rem;
+  margin: 0.25em auto 1em auto;
+  width: 80%;
+  max-width: 450px;
+}
+
 @media (min-width: 1100px) {
-  .hero-section input {
-    display: inline;
-    max-width: 50%;
+  .hero-section input[type="text"] {
+    margin: 0;
+    width: 100%;
+  }
+
+  .hero-text-input-container {
+    width: 100%;
+    max-width: 400px;
   }
 
   .hero-section input[type="submit"] {
-    margin-left: 1em;
     max-width: 180px;
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  .hero-input-container {
+    display: flex;
+    gap: 18px;
+  }
+
+  .hero-input-response {
+    margin-left: 0;
   }
 
   .cta-section input {
@@ -83,5 +113,9 @@
   .cta-section input[type="submit"] {
     width: 180px;
     margin: 0;
+  }
+
+  .cta-input-response {
+    margin-left: 0;
   }
 }
