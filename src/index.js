@@ -13,12 +13,24 @@ const ctaInputResultDiv = document.createElement("div");
 ctaInputResultDiv.classList.add("cta-input-response");
 
 heroButton.addEventListener("click", function () {
-  heroInputResultDiv.textContent = "Please check your email";
+  if (isEmailValid(heroTextInput.value)) {
+    heroInputResultDiv.textContent = "Please check your email";
+  } else {
+    heroInputResultDiv.textContent = "Please enter a valid email";
+  }
 });
 
 ctaButton.addEventListener("click", function () {
-  ctaInputResultDiv.textContent = "Please check your email";
+  if (isEmailValid(ctaTextInput.value)) {
+    ctaInputResultDiv.textContent = "Please check your email";
+  } else {
+    ctaInputResultDiv.textContent = "Please enter a valid email";
+  }
 });
 
 heroTextInputContainer.append(heroInputResultDiv);
 ctaInputContainer.insertBefore(ctaInputResultDiv, ctaButton);
+
+function isEmailValid(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}

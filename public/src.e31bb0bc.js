@@ -130,13 +130,25 @@ heroInputResultDiv.classList.add("hero-input-response");
 var ctaInputResultDiv = document.createElement("div");
 ctaInputResultDiv.classList.add("cta-input-response");
 heroButton.addEventListener("click", function () {
-  heroInputResultDiv.textContent = "Please check your email";
+  if (isEmailValid(heroTextInput.value)) {
+    heroInputResultDiv.textContent = "Please check your email";
+  } else {
+    heroInputResultDiv.textContent = "Please enter a valid email";
+  }
 });
 ctaButton.addEventListener("click", function () {
-  ctaInputResultDiv.textContent = "Please check your email";
+  if (isEmailValid(ctaTextInput.value)) {
+    ctaInputResultDiv.textContent = "Please check your email";
+  } else {
+    ctaInputResultDiv.textContent = "Please enter a valid email";
+  }
 });
 heroTextInputContainer.append(heroInputResultDiv);
 ctaInputContainer.insertBefore(ctaInputResultDiv, ctaButton);
+
+function isEmailValid(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
