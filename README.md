@@ -38,7 +38,6 @@ Users should be able to:
 ### Built with
 
 - HTML5
-- CSS3
 - Flexbox
 - SCSS
 - Mobile-first workflow
@@ -46,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-In this project I practiced SCSS by styling and laying out elements for a landing page. I learned how to use JavaScript DOM manipulation to display a message when the "Get Started" buttons were clicked. I used regex to validate the email in order to display a certain message for the different outcomes. Although validating emails on the cilent side is not recommended, I did it solely for the purpose of the UI/UX.
+In this project, I practiced SCSS by styling and laying out elements for a landing page. I learned how to use JavaScript DOM manipulation to display a message when the "Get Started" buttons were clicked. I used regex to validate the email in order to display a certain message for the different outcomes. Although validating emails on the cilent side is not recommended, I did it solely for the purpose of the UI/UX.
 
 ## Author
 
